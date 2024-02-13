@@ -1,6 +1,9 @@
 {
   "name": "express-local-library",
   "version": "0.0.0",
+  "engines": {
+    "node": ">20.11.0"
+  },
   "description": "Local library website example from MDN server-side tutorials",
   "private": true,
   "scripts": {
@@ -9,10 +12,18 @@
     "server": "DEBUG=express-locallibrary-tutorial:* npm run dev"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^16.4.4",
     "express": "~4.16.1",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
     "http-errors": "~1.6.3",
+    "luxon": "^3.4.4",
+    "mongoose": "^8.1.1",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"
   },
